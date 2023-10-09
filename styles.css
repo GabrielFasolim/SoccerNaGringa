@@ -1,0 +1,233 @@
+
+* { 
+    padding: 0;
+    margin: 0;
+    scroll-behavior: smooth;
+}
+
+.blocoInicial { 
+    width: 100%;
+    height: 100%;
+    background-image:url('./images/bgAzul.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.blocoInicial .menuContainer { 
+    display: flex;
+    justify-content: space-around;   
+    padding-top:2%;
+}
+
+.blocoInicial .menuContainer a { 
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding: 1rem;
+    font-family: "redonda", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+}
+
+.blocoInicial .menuContainer a:hover { 
+    cursor: pointer;
+    opacity: 0.8;
+}
+
+.blocoInicial .logoCentral { 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+
+.blocoInicial .logoCentral img { 
+    width: 50%;
+    max-width:500px;
+}
+
+.blocoApresentacao { 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    background-color: #0040BC;
+}
+
+.blocoApresentacao .ladoEsquerdo, .blocoApresentacao .ladoDireito{ 
+    width: 50%;
+    padding: 2%;
+}
+
+.blocoApresentacao .ladoEsquerdo { 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.blocoApresentacao .ladoEsquerdo .tituloContainer { 
+    margin-top: 5%;
+    padding-left: 10%;
+    font-family: "redonda", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.blocoApresentacao .ladoEsquerdo .titulo { 
+    color: #fff;
+    font-size: 5rem;
+    font-weight: bold;
+    padding-bottom: 2%;
+    line-height: 50px;
+    margin-top: 10%;
+}
+
+.blocoApresentacao .ladoDireito { 
+    display: flex;
+    flex-direction: column;
+
+}
+
+
+.blocoApresentacao .ladoDireito p { 
+    color: #fff;
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding-bottom: 2%;
+    line-height: 50px;
+    margin-top: 3%;
+    font-family: "redonda", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+}
+
+.videoBloco {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    background-color: #fff;
+    height: 100%;
+    width: 100%;
+    min-height: 800px;
+    background-image:url('./images/bgVerde.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.videoBloco .container {
+    width: 80%;
+    height: 100%;
+    min-height: 800px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image:url('./images/gradeImage.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.convite{
+    padding-top: 5%;
+    background-color: #0040BC;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 5%;
+    
+}
+
+.conviteEsquerdo{
+    color: #fff;
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding-bottom: 2%;
+    line-height: 50px;
+    display: flex;
+    flex-direction: column;
+    margin-left: 200px;
+    font-family: "redonda", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+}
+
+
+.conviteDireito{ 
+    display:flex;
+}
+
+.sobrepor{
+    position:relative;
+    left:400px;
+}
+
+.tituloConvite{
+    font-size: 100px;
+    margin-bottom: 50px;
+    font-family: "redonda", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+.contatoSec{
+    background-color: #0040BC;
+}
+.entreContato{
+    display: flex;
+    margin-left: 150px;
+    
+}
+
+.tituloContato{
+    font-size: 100px;
+    margin: 50px;
+    color: white;
+    text-align: right;
+    font-family: "redonda", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.contatoButton {
+    color: white;
+    outline: 0;
+    grid-gap: 8px;
+    align-items: center;
+    background: 0 0;
+    border: 1px solid #ffffff;
+    border-radius: 15px;
+    cursor: pointer;
+    display: inline-flex;
+    flex-shrink: 0;
+    font-size: 16px;
+    gap: 8px;
+    justify-content: center;
+    line-height: 1.5;
+    overflow: hidden;
+    padding: 12px 16px;
+    text-decoration: none;
+    text-overflow: ellipsis;
+    transition: all .14s ease-out;
+    white-space: nowrap;
+
+}
+
+.tagContato{
+    margin-left: 100px;
+}
+.footerContainer{
+    display: flex;
+    justify-content: center;
+    color: white;
+    background-color: #00359B;
+    font-family: "redonda", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+}
