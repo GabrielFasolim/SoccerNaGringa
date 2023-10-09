@@ -123,8 +123,8 @@
 }
 
 .videoBloco .container {
-    width: 80%;
-    height: 100%;
+    width: 75vw;
+    height: 85vh;
     min-height: 800px;
     display: flex;
     justify-content: center;
