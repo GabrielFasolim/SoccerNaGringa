@@ -129,9 +129,10 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-image:url('./images/gradeImage.png');
+    background-image:url('./images/bgGrade.png');
     background-repeat: no-repeat;
-    background-size: cover;
+    object-fit: cover;
+    background-size: contain;
     background-position: center;
 }
 
@@ -139,55 +140,74 @@
     padding-top: 5%;
     background-color: #0040BC;
     display: flex;
-    justify-content: center;
-    align-items: center;
     padding-bottom: 5%;
-    
+    padding-left: 5%;
+}
+
+
+
+.conviteDireito{
+    width: 60%;
 }
 
 .conviteEsquerdo{
     color: #fff;
+    width: 25%;
     font-size: 1.5rem;
     font-weight: bold;
     padding-bottom: 2%;
-    line-height: 50px;
+    line-height: 30px;
     display: flex;
     flex-direction: column;
-    margin-left: 200px;
     font-family: "redonda", sans-serif;
     font-weight: 300;
     font-style: normal;
+    margin-left: 200px;
 }
 
 
 .conviteDireito{ 
     display:flex;
+    justify-content: center;
 }
+
+.conviteDireito img{
+    max-width: 50%;
+    max-height: 82%;
+}
+
 
 .sobrepor{
     position:relative;
-    left:400px;
+    left: 25%;
 }
 
 .tituloConvite{
-    font-size: 100px;
-    margin-bottom: 50px;
+    font-size: 70px;
+    letter-spacing: 1px;
+    margin-bottom: 4%;
+    line-height: 50px;
     font-family: "redonda", sans-serif;
     font-weight: 700;
     font-style: normal;
 }
+
+.textConvite{
+    font-size: 80%;
+    line-height: 50px;
+    font-weight: 300;
+}
+
 .contatoSec{
     background-color: #0040BC;
 }
 .entreContato{
     display: flex;
-    margin-left: 150px;
-    
 }
 
 .tituloContato{
     font-size: 100px;
-    margin: 50px;
+    margin-right: 400px;
     color: white;
     text-align: right;
     font-family: "redonda", sans-serif;
@@ -231,3 +251,199 @@
     font-weight: 300;
     font-style: normal;
 }
+
+.entreContato{
+    width: 100%;
+}
+
+.entreContato img{
+    width: 50%;
+}
+
+.entreContato .contato{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+a.buttonContainer {
+    padding-left: 40%;
+}
+
+/* RESPONSIVO */
+
+@media (max-width: 1440px) {
+    .convite{
+        padding-top: 5%;
+        background-color: #0040BC;
+        display: flex;
+        padding-bottom: 5%;
+
+    }
+    
+}
+
+/* Celulares */
+
+@media (max-width: 900px) {
+    .convite{
+        flex-direction: column;
+    }
+    .conviteEsquerdo{
+        margin-left: 0px;
+    }
+
+    .conviteEsquerdo, .conviteDireito {
+        width: 100%;
+    }
+
+    .sobrepor {
+        left: 20%;
+    }
+
+    .tituloConvite{
+        font-size: 42px;
+    }
+
+    .textConvite {
+        font-size: 70%;
+        padding: 0% 5%;
+    }
+
+    .conviteDireito {
+        margin-left: -15%;
+    }
+
+    .blocoApresentacao{
+        flex-direction: column;
+    }
+
+    .blocoApresentacao .ladoEsquerdo, .blocoApresentacao .ladoDireito{
+        width: 100%;
+    }
+
+    .blocoApresentacao .ladoEsquerdo img{
+        width:50%;
+    }
+
+    .blocoApresentacao .ladoEsquerdo .titulo {
+        font-size: 3rem;
+    }
+
+    .blocoApresentacao .ladoDireito p {
+        font-size: 1rem;
+        padding: 0% 5%;
+    }
+
+    .contatoSec{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .entreContato {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-left: 0;
+    }
+    
+    .tituloContato{
+        font-size:48px;
+        text-align: center;
+    }
+
+    .contato{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .contatoSec img{
+        width: 100%;
+    }
+
+    .buttonContainer{
+        padding-bottom: 5%;
+    }
+
+    .contatoButton {
+        margin-left: 25%;
+    }
+}
+
+@media (max-width: 768px) {
+    .tituloConvite{
+        margin-left: 30px;
+    }
+    .itensHeader{
+        font-size: 17px !important;
+    }
+    .imgIcon{
+        height: 18px;
+    }
+    .contatoButton{
+        font-size: 15px;
+        width: 170px;
+    }
+}
+
+@media (max-width: 425px) {
+    .imgIcon{
+        height: 20px;
+        
+    }
+    .itensEsquerda{
+        display: none;
+    }
+    .itensHeader{
+        font-size: 13px !important;
+    }
+    
+    .itensCentro{
+        margin-top: 10px;
+        margin-bottom: 10px;
+        font-size: 5px;
+    }
+    .entreContato .contato{
+        width: 0%;
+        margin-left: 100px;
+    }
+    .contatoButton{
+        font-size: 10px;
+        width: 150px;
+    }
+    .tituloConvite{
+        margin-left: 20px;
+        padding-top: 50px;
+    }
+    .blocoApresentacao .ladoEsquerdo .tituloContainer { 
+        margin-top: 5%;
+        padding-left: 0%;
+        font-family: "redonda", sans-serif;
+        font-weight: 700;
+        font-style: normal;
+    }
+    .blocoApresentacao .ladoDireito p {
+        line-height: 30px;
+        margin-left: 20px;
+
+        }
+    .menuContainer{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        
+    }
+    .textConvite{
+        line-height: 30px;
+    }
+    .tituloContato{
+        margin-right: 0px;
+    }
+
+    
+}
+
