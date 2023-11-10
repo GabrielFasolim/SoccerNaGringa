@@ -6,6 +6,8 @@
     <title>Soccer gringa</title>
     <link rel="stylesheet" href="https://use.typekit.net/nax2ccm.css">
     <link rel="stylesheet" href="./styles.css">
+    <link rel="icon" type="image/x-icon" href="./images/brasilPersonagem.png">
+
 </head>
 <body>
     
@@ -84,9 +86,25 @@
         </div>
 
     </section>
+    <script>
+        var htmlString = "";
+        var apiKey = ''; //https://console.developers.google.com
+        var channelID = '';
+        var maxResults = 999;
+
+        $.getJSON('https://www.googleapis.com/youtube/v3/search?key=' + apiKey + '&channelId=' + channelID + '&part=snippet,id&order=date&maxResults=' + (maxResults > 1 ? 1 : maxResults), function(data) {
+            $.each(data.items, function(i, item) {
+                var videoID = item['id']['videoId'];
+                var title = item['snippet']['title'];
+                var videoEmbed = "https://www.youtube.com/embed/" + videoID;
+                htmlString += '<iframe width="100%" height="400" src="' + videoEmbed + '" frameborder="0" allowfullscreen></iframe>';
+            });
+            $('.video').html(htmlString);
+        });
+    </script>
 
     <section class="videoBloco">
-        <div class="container">
+        <div class="video">
             <p>Meu ultimo video</p>
         </div>
     </section>

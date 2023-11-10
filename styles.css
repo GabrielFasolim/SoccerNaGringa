@@ -122,7 +122,7 @@
     background-position: center;
 }
 
-.videoBloco .container {
+.videoBloco .video {
     width: 75vw;
     height: 85vh;
     min-height: 800px;
@@ -184,18 +184,20 @@
 
 .tituloConvite{
     font-size: 70px;
-    letter-spacing: 1px;
+    letter-spacing: 2px;
     margin-bottom: 4%;
-    line-height: 50px;
+    line-height: 60px;
     font-family: "redonda", sans-serif;
     font-weight: 700;
     font-style: normal;
 }
 
 .textConvite{
-    font-size: 80%;
+    font-size: 100%;
     line-height: 50px;
+    font-family: "redonda", sans-serif;
     font-weight: 300;
+    font-style: normal;
 }
 
 .contatoSec{
@@ -279,10 +281,18 @@ a.buttonContainer {
         background-color: #0040BC;
         display: flex;
         padding-bottom: 5%;
+        flex-direction: column;
 
+    }
+    .conviteEsquerdo{
+        width: 50%;
     }
     
 }
+
+
+
+
 
 /* Celulares */
 
@@ -388,7 +398,25 @@ a.buttonContainer {
         font-size: 15px;
         width: 170px;
     }
+    .blocoApresentacao{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-left: 0px;
+    }
+    .ladoDireito{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0px;
+        width: 100%;
+        margin-left: 0px;
+        
+    }
+        
 }
+    
+
 
 @media (max-width: 425px) {
     .imgIcon{
@@ -447,3 +475,8 @@ a.buttonContainer {
     
 }
 
+@media (max-width: 425px) {
+    .itensHeader{
+        font-size: 12px !important;
+    }
+ }
