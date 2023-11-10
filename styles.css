@@ -413,6 +413,10 @@ a.buttonContainer {
         margin-left: 0px;
         
     }
+
+    .ladoDireito p {
+        width: 50%;
+    }
         
 }
     
@@ -480,3 +484,4 @@ a.buttonContainer {
         font-size: 12px !important;
     }
  }
+
