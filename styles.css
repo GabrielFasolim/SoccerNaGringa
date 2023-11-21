@@ -135,6 +135,10 @@
     background-size: contain;
     background-position: center;
 }
+.videoBloco .video .exibindoVideo {
+    width: 100%;
+    height: 100%;
+}
 
 
 .convite{
