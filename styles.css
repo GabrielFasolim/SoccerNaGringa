@@ -139,7 +139,7 @@
 .videoBloco .video iframe,
 .videoBloco .video video {
     width: 100%; /* Reduza a largura para 60% do contêiner */
-    max-width: 1100px; /* Defina uma largura máxima para o vídeo */
+    max-width: 800px; /* Defina uma largura máxima para o vídeo */
     height: auto; /* Mantenha a altura automática para manter a proporção original */
 }
 
