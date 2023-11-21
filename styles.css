@@ -498,9 +498,9 @@ a.buttonContainer {
     
 }
 
-@media (max-width: 425px) {
+@media (max-width: 320px) {
     .itensHeader{
-        font-size: 12px !important;
+        font-size: 9px !important;
     }
  }
 
