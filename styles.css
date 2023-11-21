@@ -72,7 +72,7 @@
 
 .blocoApresentacao .ladoEsquerdo .tituloContainer { 
     margin-top: 5%;
-    padding-left: 10%;
+    
     font-family: "redonda", sans-serif;
     font-weight: 700;
     font-style: normal;
@@ -139,7 +139,7 @@
 .videoBloco .video iframe,
 .videoBloco .video video {
     width: 100%; /* Reduza a largura para 60% do contêiner */
-    max-width: 800px; /* Defina uma largura máxima para o vídeo */
+    max-width: 900px; /* Defina uma largura máxima para o vídeo */
     height: auto; /* Mantenha a altura automática para manter a proporção original */
 }
 
