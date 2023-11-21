@@ -136,6 +136,7 @@
     background-position: center;
 }
 
+
 .convite{
     padding-top: 5%;
     background-color: #0040BC;
@@ -417,6 +418,15 @@ a.buttonContainer {
     .ladoDireito p {
         width: 50%;
     }
+    .videoBloco .video .exibindoVideo {
+        width: 100%;
+        height: 100%;
+    }
+    .videoBloco .video iframe,
+    .videoBloco .video video {
+        width: 100%;
+        height: 100%;
+    }
         
 }
     
@@ -474,6 +484,15 @@ a.buttonContainer {
     }
     .tituloContato{
         margin-right: 0px;
+    }
+    .videoBloco .video .exibindoVideo {
+        width: 100%;
+        height: 100%;
+    }
+    .videoBloco .video iframe,
+    .videoBloco .video video {
+        width: 100%;
+        height: 100%;
     }
 
     

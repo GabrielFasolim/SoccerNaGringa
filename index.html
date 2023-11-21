@@ -27,9 +27,9 @@
             </div>
     
             <div class="itensDireita">
-                <a><img class="imgIcon" src="./images/whatsIcon.png" alt="whatsIcon" /></a>
-                <a><img class="imgIcon" src="./images/instaIcon.png" alt="instaIcon"/></a>
-                <a><img class="imgIcon" src="./images/youtubeIcon.png" alt="youtubeIcon" /></a>
+                <a target="_blank" href="https://wa.me/19736981566"><img class="imgIcon" src="./images/whatsIcon.png" alt="whatsIcon" /></a>
+                <a target="_blank" href="https://www.instagram.com/soccernagringa/"><img class="imgIcon" src="./images/instaIcon.png" alt="instaIcon"/></a>
+                <a target="_blank" href="https://www.youtube.com/@SoccerNaGringa"><img class="imgIcon" src="./images/youtubeIcon.png" alt="youtubeIcon" /></a>
             </div>
         </nav>
 
@@ -89,7 +89,7 @@
     <script>
         var htmlString = "";
         var apiKey = 'AIzaSyDDBk8tAkod1VRRNyFZF09fgQyMpnSe5HI'; //https://console.developers.google.com
-        var channelID = '';
+        var channelID = 'UCA648I1fKL-McPvb70vaqvg';
         var maxResults = 999;
 
         $.getJSON('https://www.googleapis.com/youtube/v3/search?key=' + apiKey + '&channelId=' + channelID + '&part=snippet,id&order=date&maxResults=' + (maxResults > 1 ? 1 : maxResults), function(data) {
@@ -105,7 +105,9 @@
 
     <section class="videoBloco">
         <div class="video">
-            <p>Meu ultimo video</p>
+            <div class="exibindoVideo">
+                <video src="./images/INTRO.mp4" controls></video>
+            </div>
         </div>
     </section>
     <section class="conviteSection" id="patrocinador">
@@ -150,19 +152,19 @@
         </div>
         
     </section>
-    <section class="contatoSec">
+    <section id="contato" class="contatoSec">
         <div class="entreContato">
             <img src="./images/cards.png" alt="">
             <div class="contato">
                 <h1 class="tituloContato">Entre em <br> contato: </h1>
-                <a href="" class="buttonContainer"><button class="contatoButton"><img class="mailBut" src="./images/mailimg.png" alt="">vamos conversar</button></a>
+                <a href="mailto:oficialsoccernagringa@gmail.com" class="buttonContainer"><button class="contatoButton"><img class="mailBut" src="./images/mailimg.png" alt="">vamos conversar</button></a>
             </div>
         </div>
     </section>
     <footer>
         <div class="footerContainer">
             <div class="footerEsquerdo">
-                <p>© 2020 Soccer na Gringa. </p>
+                <p>© 2023 Soccer na Gringa. </p>
             </div>
         </div>
     </footer>
